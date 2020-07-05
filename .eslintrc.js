@@ -1,15 +1,20 @@
 module.exports = {
+  extends: 'airbnb-base',
   env: {
+    es6: true,
     browser: true,
-    es2020: true,
-  },
-  extends: [
-    'airbnb-base',
-  ],
-  parserOptions: {
-    ecmaVersion: 11,
-    sourceType: 'module',
+    jest: true,
   },
   rules: {
+    'no-restricted-syntax': [
+      'error',
+      'LabeledStatement',
+      'WithStatement',
+    ],
+    'import/prefer-default-export': 0,
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+    ],
   },
 };
