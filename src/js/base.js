@@ -27,7 +27,7 @@ export default class Character {
   levelUp() {
     if (this.level > 0) {
       // eslint-disable-next-line no-plusplus
-      ++this.level;
+      this.level = ++this.level;
       this.attack += this.attack * 0.2;
       this.defence += this.defence * 0.2;
       this.health = 100;
