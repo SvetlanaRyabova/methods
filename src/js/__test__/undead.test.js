@@ -20,7 +20,7 @@ test('test function LevelUp for Undead', () => {
 });
 
 test('test function damage for Undead', () => {
-    const und = new Undead({ name: 'Und', type: 'Undead' });
+  const und = new Undead({ name: 'Und', type: 'Undead' });
   const received = und.damage(10);
   const expected = {
     name: 'Und',
@@ -28,7 +28,7 @@ test('test function damage for Undead', () => {
     health: 92.5,
     level: 1,
     attack: 25,
-    defence: 25
-};
+    defence: 25,
+  };
   expect(received).toEqual(expected);
 });

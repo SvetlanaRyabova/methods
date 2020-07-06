@@ -28,7 +28,7 @@ test('test function damage for Bowman', () => {
     health: 92.5,
     level: 1,
     attack: 25,
-    defence: 25
-};
+    defence: 25,
+  };
   expect(received).toEqual(expected);
 });
