@@ -4,6 +4,7 @@ import Magician from './js/magician.js';
 import Swordsman from './js/swordsman.js';
 import Undead from './js/undead.js';
 import Zombie from './js/zombie.js';
+
 // import html from './index.html';
 
 const bowman = new Bowman({ name: 'Bow', type: 'Bowman' });
@@ -14,7 +15,4 @@ const undead = new Undead({ name: 'Und', type: 'Undead' });
 const zombie = new Zombie({ name: 'pete', type: 'Zombie' });
 
 console.log(bowman);
-bowman.damage(10);
-console.log(bowman);
-bowman.damage(10);
-console.log(bowman);
+console.log(bowman.damage(10));

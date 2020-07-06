@@ -8,13 +8,15 @@ class Bowman extends Character {
     this.attack = 25;
     this.defence = 25;
   }
-  levelUp(){
+
+  levelUp() {
     super.levelUp();
     return this;
   }
-  damage(points){
-    super.damage(points)
-    return this
+
+  damage(points) {
+    super.damage(points);
+    return this;
   }
 }
 
