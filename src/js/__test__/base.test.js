@@ -39,7 +39,7 @@ test('throws in name', () => {
     return bow;
   }).toThrow();
 });
-test('throws in name', () => {
+test('throws in type', () => {
   const errType = { name: 'Bow', type: 'Bow' };
 
   expect(() => {
@@ -47,6 +47,17 @@ test('throws in name', () => {
     return bow;
   }).toThrow();
 });
+
+test('throws in levelUp', () => {
+  const errType = { name: 'Bow', type: 'Bowman' };
+
+  expect(() => {
+    const bow = new Character(errType);
+    bow.level = 0;
+    bow.levelUp();
+  }).toThrow();
+});
+
 test('test function LevelUp for Character', () => {
   const bow = new Character({
     name: 'Bow',
